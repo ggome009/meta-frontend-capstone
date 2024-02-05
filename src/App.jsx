@@ -1,15 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Header from './components/Header/Header'
+import Hero from './components/Home/Hero/Hero'
+import Specials from './components/Home/Specials/Specials'
+import Testimonials from './components/Home/Testimonials/Testimonials'
+import About from './components/Home/About/About'
+import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      Homepage
-    </div>
+    <>
+      <Header/>
+      <Hero/>
+      <Specials/>
+      <Testimonials/>
+      <About/>
+      <Footer/>
+    </>
   )
 }
 
