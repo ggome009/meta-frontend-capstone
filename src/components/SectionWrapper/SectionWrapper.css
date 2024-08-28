@@ -1,0 +1,7 @@
+.section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4em 0;
+}

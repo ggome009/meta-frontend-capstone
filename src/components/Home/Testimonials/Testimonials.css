@@ -1,0 +1,14 @@
+.testimonials {
+    background-color: #495E57;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 66.67%;
+}

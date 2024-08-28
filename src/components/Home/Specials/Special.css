@@ -1,0 +1,44 @@
+.special {
+    background-color: #EDEFEE;
+    width: 30%;
+    border-radius: 16px;
+}
+
+.special-image {
+    width: 100%;
+    img {
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+}
+
+.special-info {
+    padding: 1em 1.2em;
+}
+
+.special-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-name {
+    font-family: "Markazi Text";
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.special-price {
+    color: #EE9972;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.delivery-link {
+    color: black;
+}
+
+.delivery-link:hover {
+    color: #EE9972;
+}

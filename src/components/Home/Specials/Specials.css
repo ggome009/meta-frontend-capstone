@@ -1,0 +1,18 @@
+.specials {
+    display: flex;
+    flex-direction: column;
+    width: 66.67%;
+}
+
+.specials-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.specials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

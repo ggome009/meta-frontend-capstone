@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import Header from './components/Header/Header'
+import PageLayout from './components/PageLayout/PageLayout'
 import Hero from './components/Home/Hero/Hero'
 import Specials from './components/Home/Specials/Specials'
 import Testimonials from './components/Home/Testimonials/Testimonials'
 import About from './components/Home/About/About'
-import Footer from './components/Footer/Footer'
 import './App.css'
 
 function App() {
@@ -12,12 +11,12 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <PageLayout>
       <Hero/>
       <Specials/>
       <Testimonials/>
       <About/>
-      <Footer/>
+      </PageLayout>
     </>
   )
 }

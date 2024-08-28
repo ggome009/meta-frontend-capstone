@@ -1,0 +1,73 @@
+#form-page-container {
+    background-color: #495E57;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla';
+}
+
+.form-page-content {
+    margin: 4rem 0;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.res-label {
+    color: #FFFFFF;
+    display: block;
+}
+
+.required::after {
+    content: "*";
+    color: #FF7E36;
+}
+
+.res-input {
+    font-family: 'Karla';
+    width: 100%;
+    color: #495E57;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    margin: 0 0 1.5em 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    /* -webkit-appearance: none; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.error {
+    border: 1px red solid;
+}
+
+#reserve-a-table {
+    margin: 0;
+    color: #F4CE14;
+    font-size: 4rem;
+}
+
+#little-lemon-ch {
+    margin: 0;
+    color: #EDEFEE;
+    font-size: 2rem;
+}
