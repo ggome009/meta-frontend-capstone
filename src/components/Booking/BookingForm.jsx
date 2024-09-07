@@ -13,9 +13,9 @@ const BookingForm = ({
 }) => {
     const [formData, setFormData] = useState({
         date: new Date(),
-        time: null,
-        guests: null,
-        occasion: null
+        time: availableTimes[0],
+        guests: 1,
+        occasion: ""
     })
 
     const dateChangedHandler = (date) => {
@@ -38,7 +38,7 @@ const BookingForm = ({
             <div className="form-page-content">
             <h1 id="reserve-a-table">Reserve a Table</h1>
                 <h2 id="little-lemon-ch">Little Lemon - Chicago</h2>
-                <form id="booking-form" onSubmit={submitHandler}>
+                <form id="booking-form" onSubmit={() => submitHandler(event, formData)}>
                     <div className="input-group">
                         <label className="res-label required" htmlFor="res-date">Choose date</label>
                         <DatePicker
@@ -56,7 +56,7 @@ const BookingForm = ({
                             className="res-input"
                             id="res-time "
                         >
-                            {availableTimes.times.map(time => <option value={time} key={time}>{time}</option>)}
+                            {availableTimes.map(time => <option value={time} key={time}>{time}</option>)}
                         </select>
                     </div>
                     <div className="input-group">
@@ -80,6 +80,7 @@ const BookingForm = ({
                             className="res-input"
                             id="occasion"
                         >
+                            <option value=""></option>
                             <option value="birthday">Birthday</option>
                             <option value="anniversary">Anniversary</option>
                             <option value="business">Business</option>

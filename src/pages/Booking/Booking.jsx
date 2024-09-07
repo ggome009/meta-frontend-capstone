@@ -2,46 +2,35 @@ import { useReducer } from 'react'
 import PageLayout from '../../components/PageLayout/PageLayout'
 import BookingForm from '../../components/Booking/BookingForm'
 import { fetchAPI, submitAPI } from '../../utils/api'
+import { useNavigate } from 'react-router-dom'
 
-const getToday = () => {
-  const today = new Date();
-  let dd = today.getDate();
-  dd = dd < 10 ? `0${dd}` : dd;
-  let mm = today.getMonth()+1;
-  mm = mm < 10 ? `0${mm}` : mm;
-  const yyyy = today.getFullYear();
-  return `${yyyy}-${dd}-${mm}`;
-}
-
-const updateTimes = (state, action) => {
+export const updateTimes = (state, action) => {
   switch (action.type) {
     case 'changed_date' : {
       const newTimes = fetchAPI(action.date)
-      return ({
-        date: action.date,
-        times: newTimes
-      })
+      return newTimes
     }
   }
 }
 
-const initializeTimes = (date) => {
+export const initializeTimes = (date) => {
   const now = new Date()
   const times = fetchAPI(now)
-  return {
-    date: date,
-    times: times
-  }
+  return times
 }
 
 function Booking() {
-  let today = getToday()
+  let now = new Date()
+  const navigate = useNavigate()
+  const [availableTimes, dispatchTimes] = useReducer(updateTimes, now, initializeTimes)
 
-  const [availableTimes, dispatchTimes] = useReducer(updateTimes, today, initializeTimes)
-
-  const submitHandler = (e) => {
-      e.preventDefault();
-      console.log(formData)
+  const submitForm = (e, formData) => {
+      e.preventDefault()
+      let response = submitAPI(formData)
+      localStorage.setItem("formData", JSON.stringify(formData))
+      if(response) {
+        navigate("/booking-confirmation")
+      }
   }
 
     return (
@@ -49,7 +38,7 @@ function Booking() {
           <BookingForm
             availableTimes={availableTimes}
             dispatchTimes={dispatchTimes}
-            submitHandler={submitHandler}
+            submitHandler={submitForm}
           />
       </PageLayout>
     )

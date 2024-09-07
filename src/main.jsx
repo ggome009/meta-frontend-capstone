@@ -8,6 +8,7 @@ import App from './App.jsx'
 import './index.css'
 import Home from './pages/Home.jsx'
 import Booking from './pages/Booking/Booking.jsx'
+import ConfirmedBooking from './pages/ConfirmedBooking/ConfirmedBooking.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "booking",
     element: <Booking/>
+  },
+  {
+    path: "booking-confirmation",
+    element: <ConfirmedBooking/>
   }
 ])
 
