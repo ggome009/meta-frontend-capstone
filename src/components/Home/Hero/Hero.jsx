@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import SectionWrapper from '../../SectionWrapper/SectionWrapper';
 import Button from '../../Button/Button';
 import restaurantfood from '../../../assets/restauranfood.png'
@@ -14,9 +15,9 @@ let Hero = () => {
                     </div>
 
                     <p>We are a modern family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <Button>
-                        Reserve a Table
-                    </Button>
+                    <Link to="/booking">
+                        <Button>Reserve a Table</Button>
+                    </Link>
                 </div>
                 <div className="hero-image">
                     <img src={restaurantfood}/>

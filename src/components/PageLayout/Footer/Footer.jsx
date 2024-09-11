@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import lemon from '../../../assets/lemon.png'
 import './Footer.css'
 
@@ -6,17 +7,19 @@ const Footer = () => {
         <footer>
             <div className='footer-content'>
                 <div className='footer-image-container'>
-                    <img src={lemon}/>
+                    <Link to="/">
+                        <img src={lemon}/>
+                    </Link>
                 </div>
                 <div className='footer-list-container'>
                     <h2>Doormat Navigation</h2>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Menu</a></li>
-                        <li><a>Reservation</a></li>
-                        <li><a>Order Online</a></li>
-                        <li><a>Login</a></li>
+                        <li><Link to="/"><a>Home</a></Link></li>
+                        <li><Link to="/under-construction"><a>About</a></Link></li>
+                        <li><Link to="/under-construction"><a>Menu</a></Link></li>
+                        <li><Link to="/booking"><a>Reservations</a></Link></li>
+                        <li><Link to="/under-construction"><a>Order Online</a></Link></li>
+                        <li><Link to="/under-construction"><a>Login</a></Link></li>
                     </ul>
                 </div>
                 <div className='footer-list-container'>
@@ -31,9 +34,9 @@ const Footer = () => {
                 <div className='footer-list-container'>
                     <h2>Social Media</h2>
                     <ul>
-                        <li><a>Instagram</a></li>
-                        <li><a>Twitter</a></li>
-                        <li><a>YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" rel="noreferrer nofollow">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/" rel="noreferrer nofollow">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/" rel="noreferrer nofollow">YouTube</a></li>
                     </ul>
                 </div>
             </div>

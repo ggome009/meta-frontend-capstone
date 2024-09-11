@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Button from '../Button/Button'
 import DatePicker from "react-datepicker";
-
+import { addMonths } from 'react-datepicker/dist/date_utils.d.ts';
 import "react-datepicker/dist/react-datepicker.css";
 
 import './BookingForm.css'
+
 
 const BookingForm = ({
     availableTimes,
@@ -43,9 +44,13 @@ const BookingForm = ({
                         <label className="res-label required" htmlFor="res-date">Choose date</label>
                         <DatePicker
                             selected={formData.date}
+                            minDate={new Date()}
+                            maxDate={addMonths(new Date(),1)}
                             className="res-input"
                             onChange={(date) => dateChangedHandler(date)}
-                            name="date"
+                            name="res-date"
+                            id="res-date"
+                            required
                         />
                     </div>
                     <div className="input-group">
@@ -54,7 +59,8 @@ const BookingForm = ({
                             name="time"
                             onChange={changeHandler}
                             className="res-input"
-                            id="res-time "
+                            id="res-time"
+                            required
                         >
                             {availableTimes.map(time => <option value={time} key={time}>{time}</option>)}
                         </select>
@@ -70,6 +76,7 @@ const BookingForm = ({
                             min="1"
                             max="10"
                             id="guests"
+                            required
                         />
                     </div>
                     <div className="input-group">
@@ -81,10 +88,10 @@ const BookingForm = ({
                             id="occasion"
                         >
                             <option value=""></option>
-                            <option value="birthday">Birthday</option>
-                            <option value="anniversary">Anniversary</option>
-                            <option value="business">Business</option>
-                            <option value="other">Other</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Business">Business</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                     <Button type="submit">Make Your Reservation</Button>

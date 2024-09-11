@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import SectionWrapper from '../../SectionWrapper/SectionWrapper'
 import Button from '../../Button/Button'
 import Special from './Special'
@@ -33,7 +34,7 @@ let Specials = () => {
         <SectionWrapper>
             <div className="specials">
                 <div className="specials-title">
-                    <h1>This week's specials!</h1> <Button>Online Menu</Button>
+                    <h1>This week's specials!</h1> <Link to="under-construction"><Button>Online Menu</Button></Link>
                 </div>
                 <div className="specials-container">
                     {

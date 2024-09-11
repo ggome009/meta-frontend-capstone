@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Special.css'
 
 let Special = ({img, name, price, description}) => {
@@ -12,7 +13,7 @@ let Special = ({img, name, price, description}) => {
                     <p className="special-price"><strong>{"$" + price}</strong></p>
                 </div>
                 <p>{description}</p>
-                <a className='delivery-link'>Order a delivery</a>
+                <Link to="under-construction"><a className='delivery-link'>Order a delivery</a></Link>
             </div>
         </div>
     )

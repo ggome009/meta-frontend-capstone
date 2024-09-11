@@ -38,3 +38,22 @@
         z-index: 0;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .about {
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+
+    .about-photo-container {
+        width: 80%;
+        height: 350px;
+        img {
+            width: 55%;
+        }
+    }
+}

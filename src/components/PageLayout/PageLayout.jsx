@@ -10,7 +10,6 @@ let PageLayout = ({children}) => {
         }
         <Footer/>
         </>
-        
     )
 }
 
