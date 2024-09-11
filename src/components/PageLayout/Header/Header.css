@@ -71,7 +71,6 @@
     .mobile-nav {
         overflow: hide;
         z-index: 1;
-        padding-right: 33%;
         list-style-type: none;
         text-align: right;
         display: block;
@@ -84,8 +83,9 @@
         float: right;
         transition: all 0.3s ease-in;
         li {
+            padding: 8px 20% 8px 0;
             display: block;
-            border-bottom: 1px solid #535353;
+            border-bottom: 1px solid #353535;
             text-decoration: none;
             font-size: 1.3rem;
             margin: 0;

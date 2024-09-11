@@ -9,6 +9,7 @@ import './index.css'
 import Home from './pages/Home.jsx'
 import Booking from './pages/Booking/Booking.jsx'
 import ConfirmedBooking from './pages/ConfirmedBooking/ConfirmedBooking.jsx'
+import UnderConstruction from './pages/UnderConstruction/UnderConstruction.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "booking-confirmation",
     element: <ConfirmedBooking/>
+  },
+  {
+    path: "under-construction",
+    element: <UnderConstruction/>
   }
 ])
 
