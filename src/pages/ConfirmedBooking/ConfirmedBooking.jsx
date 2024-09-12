@@ -32,7 +32,7 @@ const ConfirmedBooking = ({
             <p><FaRegUser/> {state.guests} {`guest${state.guests < 2 ? '' : 's'}`}</p>
             {state.occasion ? <p><FaBirthdayCake/> {state.occasion}</p> : null}
           </div>
-          <Link to="/"><Button>Home</Button></Link>
+          <Link to="/"><Button ariaLabel="Navigate to home page">Home</Button></Link>
         </div>
       </div>
     </PageLayout>

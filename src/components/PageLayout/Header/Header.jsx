@@ -17,7 +17,7 @@ let Header = () => {
             <nav className="nav-container">
                 <div className="nav-main">
                     <Link to="/">
-                        <div className="image-container">
+                        <div aria-label="Navigate home" className="image-container">
                             <img src={logo} />
                         </div>
                     </Link>
@@ -29,7 +29,7 @@ let Header = () => {
                         <li><Link to="/under-construction">Order Online</Link></li>
                         <li><Link to="/under-construction">Login</Link></li>
                     </ul>
-                    <Button className="nav-btn" onClick={toggleOpen}><FaBars/></Button>
+                    <Button ariaLabel="Toggle navigation" className="nav-btn" onClick={toggleOpen}><FaBars/></Button>
                 </div>
             </nav>
             <ul className={`mobile-nav ${open ? 'open' : ''}`}>

@@ -73,6 +73,7 @@ const BookingForm = ({
                     <div className="input-group">
                         <label className="res-label required" htmlFor="res-date">Choose date</label>
                         <DatePicker
+                            aria-label="Select date"
                             selected={formData.date}
                             minDate={new Date()}
                             maxDate={addMonths(new Date(),1)}
@@ -86,6 +87,7 @@ const BookingForm = ({
                     <div className="input-group">
                         <label className="res-label required" htmlFor="res-time">Choose time</label>
                         <select
+                            aria-label="Select Time"
                             name="time"
                             onChange={changeHandler}
                             className="res-input"
@@ -98,6 +100,7 @@ const BookingForm = ({
                     <div className="input-group">
                         <label className="res-label required" htmlFor="guests">Number of guests</label>
                         <input
+                            aria-label="Number of guests"
                             name="guests"
                             onChange={changeHandler}
                             className="res-input"
@@ -117,14 +120,14 @@ const BookingForm = ({
                             className="res-input"
                             id="occasion"
                         >
-                            <option value=""></option>
-                            <option value="Birthday">Birthday</option>
-                            <option value="Anniversary">Anniversary</option>
-                            <option value="Business">Business</option>
-                            <option value="Other">Other</option>
+                            <option aria-label="No occasion" value=""></option>
+                            <option aria-label="Birthday" value="Birthday">Birthday</option>
+                            <option aria-label="Anniversary" value="Anniversary">Anniversary</option>
+                            <option aria-label="Business" value="Business">Business</option>
+                            <option aria-label="Other" value="Other">Other</option>
                         </select>
                     </div>
-                    <Button type="submit">Make Your Reservation</Button>
+                    <Button ariaLabel="Submit form" type="submit">Make Your Reservation</Button>
                 </form>
             </div>
         </div>

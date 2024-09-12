@@ -1,8 +1,8 @@
 import "./Button.css"
 
-let Button = ({children, className, onClick}) => {
+let Button = ({children, className, onClick, ariaLabel}) => {
     return (
-        <button className={`btn + ${className}`} onClick={onClick}>
+        <button aria-label={ariaLabel} className={`btn + ${className}`} onClick={onClick}>
             {children}
         </button>
     )

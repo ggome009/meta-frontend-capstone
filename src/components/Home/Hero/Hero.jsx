@@ -16,7 +16,7 @@ let Hero = () => {
 
                     <p>We are a modern family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                     <Link to="/booking">
-                        <Button>Reserve a Table</Button>
+                        <Button ariaLabel="Navigate to booking page">Reserve a Table</Button>
                     </Link>
                 </div>
                 <div className="hero-image">
