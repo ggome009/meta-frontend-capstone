@@ -22,23 +22,23 @@ let Header = () => {
                         </div>
                     </Link>
                     <ul className="nav-link-list">
-                        <li><Link to="/"><a>Home</a></Link></li>
-                        <li><Link to="/under-construction"><a>About</a></Link></li>
-                        <li><Link to="/under-construction"><a>Menu</a></Link></li>
-                        <li><Link to="/booking"><a>Reservations</a></Link></li>
-                        <li><Link to="/under-construction"><a>Order Online</a></Link></li>
-                        <li><Link to="/under-construction"><a>Login</a></Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/under-construction">About</Link></li>
+                        <li><Link to="/under-construction">Menu</Link></li>
+                        <li><Link to="/booking">Reservations</Link></li>
+                        <li><Link to="/under-construction">Order Online</Link></li>
+                        <li><Link to="/under-construction">Login</Link></li>
                     </ul>
                     <Button className="nav-btn" onClick={toggleOpen}><FaBars/></Button>
                 </div>
             </nav>
             <ul className={`mobile-nav ${open ? 'open' : ''}`}>
-                <li><Link to="/"><a>Home</a></Link></li>
-                <li><Link to="/under-construction"><a>About</a></Link></li>
-                <li><Link to="/under-construction"><a>Menu</a></Link></li>
-                <li><Link to="/booking"><a>Reservations</a></Link></li>
-                <li><Link to="/under-construction"><a>Order Online</a></Link></li>
-                <li><Link to="/under-construction"><a>Login</a></Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/under-construction">About</Link></li>
+                <li><Link to="/under-construction">Menu</Link></li>
+                <li><Link to="/booking">Reservations</Link></li>
+                <li><Link to="/under-construction">Order Online</Link></li>
+                <li><Link to="/under-construction">Login</Link></li>
             </ul>
         </header>
     )

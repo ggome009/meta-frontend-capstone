@@ -1,0 +1,8 @@
+.error-display {
+    width: 60%;
+    padding: 8px 24px;
+    background-color: salmon;
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}

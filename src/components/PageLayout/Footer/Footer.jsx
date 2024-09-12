@@ -14,12 +14,12 @@ const Footer = () => {
                 <div className='footer-list-container'>
                     <h2>Doormat Navigation</h2>
                     <ul>
-                        <li><Link to="/"><a>Home</a></Link></li>
-                        <li><Link to="/under-construction"><a>About</a></Link></li>
-                        <li><Link to="/under-construction"><a>Menu</a></Link></li>
-                        <li><Link to="/booking"><a>Reservations</a></Link></li>
-                        <li><Link to="/under-construction"><a>Order Online</a></Link></li>
-                        <li><Link to="/under-construction"><a>Login</a></Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/under-construction">About</Link></li>
+                        <li><Link to="/under-construction">Menu</Link></li>
+                        <li><Link to="/booking">Reservations</Link></li>
+                        <li><Link to="/under-construction">Order Online</Link></li>
+                        <li><Link to="/under-construction">Login</Link></li>
                     </ul>
                 </div>
                 <div className='footer-list-container'>

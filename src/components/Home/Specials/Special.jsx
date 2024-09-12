@@ -13,7 +13,7 @@ let Special = ({img, name, price, description}) => {
                     <p className="special-price"><strong>{"$" + price}</strong></p>
                 </div>
                 <p>{description}</p>
-                <Link to="under-construction"><a className='delivery-link'>Order a delivery</a></Link>
+                <Link to="under-construction" className='delivery-link'>Order a delivery</Link>
             </div>
         </div>
     )

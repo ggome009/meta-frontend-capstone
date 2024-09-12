@@ -25,14 +25,12 @@ function Booking() {
   const [availableTimes, dispatchTimes] = useReducer(updateTimes, now, initializeTimes)
   const [payload, setPayload] = useState(null)
 
-  const submitForm = (event, formData) => {
-      event.preventDefault()
+  const submitForm = (formData) => {
       setPayload(formData)
   }
 
   useEffect(() => {
     if(payload) {
-      console.log(payload)
       submitAPI(payload)
       localStorage.setItem("formData", JSON.stringify(payload))
       let bookingInfo = {
