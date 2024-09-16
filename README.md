@@ -52,7 +52,10 @@ To get started with the project, follow the steps below:
    npm run dev
    ```
 
-3. **Open your browser and enter the port specified by the terminal**:
+## Usage
+
+After starting the development server, you can view the app in your browser at `http://localhost:3000`. Use the app to navigate through the restaurant’s offerings, make a reservation, and get information about Little Lemon Chicago.
+
    ```bash
      VITE v5.1.6  ready in 441 ms
 
@@ -60,10 +63,6 @@ To get started with the project, follow the steps below:
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
    ```
-
-## Usage
-
-After starting the development server, you can view the app in your browser at `http://localhost:3000`. Use the app to navigate through the restaurant’s offerings, make a reservation, and get information about Little Lemon Chicago.
 
 ## Project Structure
 
@@ -79,5 +78,3 @@ After starting the development server, you can view the app in your browser at `
 ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and share!
-
----
