@@ -54,7 +54,7 @@ To get started with the project, follow the steps below:
 
 ## Usage
 
-After starting the development server, you can view the app in your browser at `http://localhost:3000`. Use the app to navigate through the restaurant’s offerings, make a reservation, and get information about Little Lemon Chicago.
+After starting the development server, you can view the app in your browser at `http://localhost:5173/`. Use the app to navigate through the restaurant’s offerings, make a reservation, and get information about Little Lemon Chicago.
 
    ```bash
      VITE v5.1.6  ready in 441 ms
